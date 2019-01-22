@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+; Created by: James O'Shannessy
+; Date: 2019/01/22
+; Comment: Remove Shift+Right Click Command Prompt options
+
+[-HKEY_CLASSES_ROOT\Directory\shell\runas]
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\runas]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\runas]
+
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shell\runas]
+
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shell\runas\command]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHereAsUser]
+
+[-HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCmdHereAsUser]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\OpenCmdHereAsUser]
+
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shell\OpenCmdHereAsUser]
+
+[-HKEY_CLASSES_ROOT\LibraryFolder\background\shell\OpenCmdHereAsUser\command]
