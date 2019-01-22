@@ -1,0 +1,6 @@
+; Created By: James O'Shannessy
+; Date: 2019/01/22
+; Comments: Remove Windows use Universal Time Code registry
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
+     "RealTimeIsUniversal"=-
