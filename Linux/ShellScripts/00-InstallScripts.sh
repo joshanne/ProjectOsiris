@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PROFILE_SCRIPT_DIR=.profile_scripts        # Set the profile script directory
+PROFILE_SCRIPT_DIR=~/.profile_scripts        # Set the profile script directory
 FILE=$PROFILE_SCRIPT_DIR/00-MainSource.sh  # Set the master source file
 
 mkdir -p $PROFILE_SCRIPT_DIR               # Create the directory to hold the scripts
@@ -12,7 +12,7 @@ echo "" >> $FILE                           # Add blank line
 for filename in ./InstallShellScripts/*.sh; do
     # Echo the name of the script
 	echo "Copying script: " $(basename $filename)
-	
+
 	# Configure the BASENAME and the LINE which will be added to the master source file
 	BASENAME=$(basename $filename)
 	LINE='source '$PROFILE_SCRIPT_DIR'/'$BASENAME
@@ -26,4 +26,4 @@ done
 
 echo ""
 echo ""
-read -n1 -r -p "Press any key to continue..." key
+read -n 1 -s -r -p "Press any key to continue"
