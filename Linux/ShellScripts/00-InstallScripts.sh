@@ -24,9 +24,7 @@ for filename in ./InstallShellScripts/*.sh; do
 	grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
 done
 
-cr=`echo $'\n.'`
-cr=${cr%.}
-
 echo ""
 echo ""
-read -n 1 -s -r -p "Press any key to continue $cr"
+# Print using posix compliant dollar-string notation
+read -n 1 -s -r -p $'Press any key to continue\n\n'
