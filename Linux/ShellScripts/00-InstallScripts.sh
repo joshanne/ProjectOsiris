@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 PROFILE_SCRIPT_DIR=~/.profile_scripts        # Set the profile script directory
 FILE=$PROFILE_SCRIPT_DIR/00-MainSource.sh  # Set the master source file
@@ -24,6 +24,9 @@ for filename in ./InstallShellScripts/*.sh; do
 	grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
 done
 
+cr=`echo $'\n.'`
+cr=${cr%.}
+
 echo ""
 echo ""
-read -n 1 -s -r -p "Press any key to continue"
+read -n 1 -s -r -p "Press any key to continue $cr"
