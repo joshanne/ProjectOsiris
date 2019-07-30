@@ -1,6 +1,8 @@
+Windows Registry Editor Version 5.00
+
 ; Created By: James O'Shannessy
 ; Date: 2019/01/22
 ; Comments: Add to make Windows use Universal Time Code
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]
-     "RealTimeIsUniversal"=dword:00000001
+  "RealTimeIsUniversal"=dword:00000001
